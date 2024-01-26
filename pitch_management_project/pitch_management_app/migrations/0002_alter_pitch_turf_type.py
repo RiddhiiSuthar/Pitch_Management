@@ -6,13 +6,23 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pitch_management_app', '0001_initial'),
+        ("pitch_management_app", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='pitch',
-            name='turf_type',
-            field=models.CharField(blank=True, choices=[('natural', 'Natural'), ('artificial', 'Artificial'), ('hybrid', 'Hybrid')], db_index=True, max_length=10, null=True),
+            model_name="pitch",
+            name="turf_type",
+            field=models.CharField(
+                blank=True,
+                choices=[
+                    ("natural", "Natural"),
+                    ("artificial", "Artificial"),
+                    ("hybrid", "Hybrid"),
+                ],
+                db_index=True,
+                max_length=10,
+                null=True,
+            ),
         ),
     ]

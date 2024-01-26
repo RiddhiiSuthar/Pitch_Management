@@ -4,14 +4,14 @@ from django import forms
 
 
 class DateInput(forms.DateInput):
-    input_type = 'date'
+    input_type = "date"
 
 
 class PitchForm(ModelForm):
     class Meta:
         model = Pitch
-        fields = '__all__'
+        fields = "__all__"
         widgets = {
-            'last_maintenance_date': DateInput(),
-            'next_maintenance_date': DateInput(),
+            "last_maintenance_date": DateInput(),
+            "next_maintenance_date": DateInput(),
         }

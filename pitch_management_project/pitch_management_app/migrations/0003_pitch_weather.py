@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pitch_management_app', '0002_alter_pitch_turf_type'),
+        ("pitch_management_app", "0002_alter_pitch_turf_type"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='pitch',
-            name='weather',
+            model_name="pitch",
+            name="weather",
             field=models.CharField(blank=True, max_length=255, null=True),
         ),
     ]

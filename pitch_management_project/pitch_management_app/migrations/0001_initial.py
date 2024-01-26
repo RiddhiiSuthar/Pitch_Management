@@ -7,20 +7,27 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Pitch',
+            name="Pitch",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=255)),
-                ('location', models.CharField(max_length=255)),
-                ('turf_type', models.CharField(max_length=255)),
-                ('last_maintenance_date', models.DateTimeField()),
-                ('next_maintenance_date', models.DateTimeField()),
-                ('current_condition', models.IntegerField()),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=255)),
+                ("location", models.CharField(max_length=255)),
+                ("turf_type", models.CharField(max_length=255)),
+                ("last_maintenance_date", models.DateTimeField()),
+                ("next_maintenance_date", models.DateTimeField()),
+                ("current_condition", models.IntegerField()),
             ],
         ),
     ]

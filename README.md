@@ -15,8 +15,8 @@ The Pitch Health Monitoring API is designed to provide a simple and efficient so
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/yourusername/your-repo.git
-    cd your-repo
+    git clone https://github.com/RiddhiiSuthar/Pitch_Management.git
+    cd Pitch_Management
     ```
 
 2. **Build Docker Image:**
