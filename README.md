@@ -2,7 +2,6 @@
 
 ## Overview
 The Pitch Health Monitoring API is designed to provide a simple and efficient solution for monitoring the health of pitches.
-``
 ## Prerequisites
 
 
@@ -19,17 +18,13 @@ The Pitch Health Monitoring API is designed to provide a simple and efficient so
     cd Pitch_Management
     ```
 
-2. **Build Docker Image:**
+2. **Build and Run with Docker Compose:**
 
     ```bash
     docker-compose build
-    ```
-
-3. **Run Docker Container:**
-
-    ```bash
     docker-compose up
     ```
+
 
 
 4. **Access the Application:**
