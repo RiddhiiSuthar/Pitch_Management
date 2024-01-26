@@ -113,7 +113,7 @@ def update_pitch_data_with_weather(request, pitch_id):
 
 def pitchlist(request):
 
-    pitch = Pitch.objects.filter(next_maintenance_date__gte=datetime.now()).order_by(
+    pitch = Pitch.objects.filter(current_condition__lte= 4, next_maintenance_date__gte=datetime.now()).order_by(
         "next_maintenance_date"
     )
     context = {"pitches": pitch}
