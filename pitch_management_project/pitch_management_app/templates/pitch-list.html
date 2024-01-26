@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card-body">
+    <h4>Pitch List</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Pitch Name</th>
+                <th>Country</th>
+                <th>Weather</th>
+                <th>Pitch Type</th>    
+                <th>Next Maintenance Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for pitch in pitches %}
+            <tr>
+                <td>{{pitch.name}}</td>
+                <td>{{pitch.location}}</td>
+                <td>{{pitch.weather}}</td>
+                <td>{{pitch.turf_type}}</td>
+                <td>{{pitch.next_maintenance_date|date:"M. d, Y" }}</td>
+                <td><a type="button" class="btn btn-warning" href="/pitch_manage/pitch-update/{{ pitch.id }}">Update</a>
+                    <a type="button" class="btn btn-danger" href="/pitch_manage/pitch-delete/{{ pitch.id }}">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a type="button" class="btn btn-success" href="{%url 'pitch-create' %}">Create</a>
+</div>
+{% endblock %}

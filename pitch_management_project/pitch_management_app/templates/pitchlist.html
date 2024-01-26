@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#pitches {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#pitches td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#pitches tr:nth-child(even){background-color: #f2f2f2;}
+
+#pitches tr:hover {background-color: #ddd;}
+
+#pitches th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h1>Maintenance Pitches</h1>
+
+<table id="pitches">
+  <tr>
+    <th>Pitch Name</th>
+    <th>Country</th>
+    <th>Weather</th>
+    <th>Pitch Type</th>    
+    <th>Next Maintenance Date</th>
+  
+</tr>
+  {% for pitch in pitches %}
+  <tr>
+    <td>{{pitch.name}}</td>
+    <td>{{pitch.location}}</td>
+    <td>{{pitch.weather}}</td>
+    <td>{{pitch.turf_type}}</td>
+    <td>{{pitch.next_maintenance_date|date:"M. d, Y" }}</td>
+    
+  </tr>
+  {% endfor %}
+ 
+</table>
+
+</body>
+</html>
+
+
