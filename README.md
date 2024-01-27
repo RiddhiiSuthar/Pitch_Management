@@ -83,8 +83,8 @@ The Pitch Management API is designed to provide a simple and efficient solution 
 
         If the weather is not "Rain," regular maintenance is scheduled based on the defined `REGULAR_MAINTENANCE_DAY` in the settings.
 
-        - Endpoint: `pitch_manage/update_pitch_data_with_weather/{pitch_id}`
-        - Description: Update pitch data according to weather.
+    - Endpoint: `pitch_manage/update_pitch_data_with_weather/{pitch_id}/`
+    - Description: Update pitch data according to weather.
 
     ### List Pitches Requiring Maintenance Soon:
     - Endpoint: `/pitch_manage`
