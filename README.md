@@ -69,7 +69,7 @@ The Pitch Management API is designed to provide a simple and efficient solution 
     - ...
     - 1: Poor (Not good condition)
 
-    ### Next Maintenance Day and Update 'Current Condition:
+    ### Next Maintenance Day and Update Current Condition:
     - Determine maintenance scheduling based on weather conditions.
         ### 1. Rainy Weather Handling
 
@@ -83,6 +83,8 @@ The Pitch Management API is designed to provide a simple and efficient solution 
 
         If the weather is not "Rain," regular maintenance is scheduled based on the defined `REGULAR_MAINTENANCE_DAY` in the settings.
 
+        - Endpoint: `pitch_manage/update_pitch_data_with_weather/{pitch_id}`
+        - Description: Update pitch data according to weather.
 
     ### List Pitches Requiring Maintenance Soon:
     - Endpoint: `/pitch_manage`
